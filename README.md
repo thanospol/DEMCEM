@@ -7,6 +7,8 @@ The source code of DEMCEM can be found in Matlab and C++. Also, mex plugins are 
 
 You are welcome to report any bugs found while testing! 
 
+Here is the old page: http://web.mit.edu/thanos_p/www/DEMCEM.html
+
 ## Acknowledgements
 
 Part of the Matlab code was developed with the help of José M. Tamayo, during his visit (September-December 2010) at LEMA-EPFL. Special thank goes to Michael Mattes for his valuable advice and constant support. 
