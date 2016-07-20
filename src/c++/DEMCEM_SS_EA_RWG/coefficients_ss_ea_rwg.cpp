@@ -113,7 +113,7 @@ void coefficients_ss_ea_rwg (const double r1[],const double r2[],const double r3
         t1  = cc[0] * bb[1];
         t2  = sqrt(0.3e1);
         t3  = dd[2] * t2;
-        t5  = cc[2] * bb[2];
+        t5  = cc[0] * bb[2];
         t6  = dd[1] * t2;
         t8  = cc[1] * bb[2];
         t9  = dd[0] * t2;
@@ -271,7 +271,7 @@ void coefficients_ss_ea_rwg (const double r1[],const double r2[],const double r3
         complex<double> t1  = cc[1] * dd[2];
         complex<double> t2  = sqrt(3.0);
         complex<double> t3  = bb[0] * t2;
-        complex<double> t5  = cc[0] * dd[2];
+        complex<double> t5  = cc[0] * dd[1];
         complex<double> t6  = bb[2] * t2;
         complex<double> t8  = cc[0] * dd[2];
         complex<double> t9  = bb[1] * t2;
