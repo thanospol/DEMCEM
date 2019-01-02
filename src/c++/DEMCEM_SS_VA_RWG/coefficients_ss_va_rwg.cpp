@@ -20,7 +20,7 @@ using namespace std;
 //			IMPLEMENTATION OF void coefficients_va
 // ***********************************************************************
 
-void coefficients_ss_va_rwg (const double r1[],const double r2[],const double r3[],const double r4[], const double r5[], const double ko, complex<double> coef[], int flag )
+void coefficients_ss_va_rwg (const double r1[],const double r2[],const double r3[],const double r4[], const double r5[], const complex<double> ko, complex<double> coef[], int flag )
 {                         
 	double bb[3], cc[3], dd[3], ee[3];
 	//

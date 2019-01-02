@@ -23,9 +23,9 @@ using namespace std;
 
 void post_ws_st_rwg ( complex<double> Isub[3][3][3], complex<double> I_simplex[]);
 
-complex<double> phi_functions_ws_st_rwg ( int ROW, int COLUMN, int argument, double psi, double Apsi, const double ko);
+complex<double> phi_functions_ws_st_rwg ( int ROW, int COLUMN, int argument, double psi, double Apsi, const complex<double> ko);
 
-complex<double> phi_ws_st_rwg ( complex<double> A, complex<double> B, complex<double> C, int argument, double psi, double Apsi, const double ko , int flag);
+complex<double> phi_ws_st_rwg ( complex<double> A, complex<double> B, complex<double> C, int argument, double psi, double Apsi, const complex<double> ko , int flag);
 
 void gl_quad ( int n, double x[], double w[] );
 

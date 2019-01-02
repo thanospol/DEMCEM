@@ -22,7 +22,7 @@ using namespace std;
 //			IMPLEMENTATION OF void DIRECT
 // ***********************************************************************
 
-void demcem_ws_ea_rwg (const double r1[],const double r2[],const double r3[],const double r4[], const double ko, const int N_theta, const int N_psi, complex<double> I_DE[] )
+void demcem_ws_ea_rwg (const double r1[],const double r2[],const double r3[],const double r4[], const complex<double> ko, const int N_theta, const int N_psi, complex<double> I_DE[] )
 {
 	// ************************************************
 	//			DECLARATION OF KEY VARIABLES
@@ -259,7 +259,13 @@ void demcem_ws_ea_rwg (const double r1[],const double r2[],const double r3[],con
 		 I_f3_f1[m-1] = J_theta * I_theta_f3_f1;
 		 I_f3_f2[m-1] = J_theta * I_theta_f3_f2;
 		 I_f3_f3[m-1] = J_theta * I_theta_f3_f3;
-	 } //end for ( int m = 1; m <  7; m++ )
+	 } //end for ( int m = 1; m <  7; m++ )	 delete[] w_theta_p;
+	 
+	 delete[] w_theta;
+	 delete[] w_psi;
+	 delete[] z_theta;
+	 delete[] z_psi;
+
 	 //
 	 Iconst = I_const[0] + I_const[1] + I_const[2] + I_const[3] + I_const[4] + I_const[5];
 	 If1_f1 = I_f1_f1[0] + I_f1_f1[1] + I_f1_f1[2] + I_f1_f1[3] + I_f1_f1[4] + I_f1_f1[5];

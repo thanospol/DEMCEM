@@ -33,9 +33,9 @@ void theta_limits_ws_ea_rwg ( int argument, double *theta_A, double *theta_B );
 
 void psi_limits_ws_ea_rwg ( int argument, double PsiA, double PsiB, double *psi_A, double *psi_B );
 
-void x_functions_pre_ws_ea_rwg (double theta, double Psi, double tPsiA, double tPsiB, double PsiA, double PsiB, double B, double Bm, complex<double> N[], complex<double> Nm[], const double ko);
+void x_functions_pre_ws_ea_rwg (double theta, double Psi, double tPsiA, double tPsiB, double PsiA, double PsiB, double B, double Bm, complex<double> N[], complex<double> Nm[], const complex<double> ko);
 
-void coefficients_ws_ea_rwg (const double r1[],const double r2[],const double r3[],const double r4[],const double ko, complex<double> coef[], complex<double> coefm[], int flag );
+void coefficients_ws_ea_rwg (const double r1[],const double r2[],const double r3[],const double r4[],const complex<double> ko, complex<double> coef[], complex<double> coefm[], int flag );
 
 complex<double> x_functions_ws_ea_rwg (double theta, double Psi, double B, double Bm, complex<double> coef[], complex<double> coefm[], complex<double> N[], complex<double> Nm[], int flag);
 

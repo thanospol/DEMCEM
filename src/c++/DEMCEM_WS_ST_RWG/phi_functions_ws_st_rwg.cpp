@@ -17,7 +17,7 @@
 //			IMPLEMENTATION OF complex<double> PHI_functions
 // ***********************************************************************
 
-complex<double> phi_functions_ws_st_rwg ( int ROW, int COLUMN, int argument, double psi, double Apsi, const double ko )
+complex<double> phi_functions_ws_st_rwg ( int ROW, int COLUMN, int argument, double psi, double Apsi, const complex<double> ko )
 {
 	complex<double> PHI_out;
 	complex<double> j   = Iunit;
