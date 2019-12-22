@@ -19,7 +19,7 @@
 //			IMPLEMENTATION OF void DIRECT
 // ***********************************************************************
 
-void demcem_ws_va_rwg (const double r1[],const double r2[],const double r3[],const double r4[], const double r5[], const double ko, const int N_theta_p, const int N_theta_q, const int N_psi, complex<double> I_DE[] )
+void demcem_ws_va_rwg (const double r1[],const double r2[],const double r3[],const double r4[], const double r5[], const complex<double> ko, const int N_theta_p, const int N_theta_q, const int N_psi, complex<double> I_DE[] )
 {
 	// ************************************************
 	//			DECLARATION OF KEY VARIABLES
@@ -310,6 +310,14 @@ void demcem_ws_va_rwg (const double r1[],const double r2[],const double r3[],con
 		 I_theta_p_const  += WTHETA_p * I_theta_q_const;
 
 	 } //end for ( int n_theta_p = 0 ; n_theta_p <  N_theta_p ; n_theta_p++ )
+
+	 delete[] w_theta_p;
+	 delete[] w_theta_q;
+	 delete[] w_psi;
+	 delete[] z_theta_p;
+	 delete[] z_theta_q;
+	 delete[] z_psi;
+	 
 	 //
 	 I_theta_p_1_1     *=  J_theta_p ;
 	 I_theta_p_1_2     *=  J_theta_p ;

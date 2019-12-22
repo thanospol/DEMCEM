@@ -20,7 +20,7 @@ using namespace std;
 //			IMPLEMENTATION OF void X_function_pre
 // ***********************************************************************
 
-void k_functions_ss_va_rwg (double GAMMA, double L, complex<double> K[], const double ko)
+void k_functions_ss_va_rwg (double GAMMA, double L, complex<double> K[], const complex<double> ko)
 {
 	complex<double> a  = Iunit * ko * GAMMA;
 	//

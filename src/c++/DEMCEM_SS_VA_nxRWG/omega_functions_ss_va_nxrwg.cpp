@@ -23,7 +23,7 @@ using namespace std;
 // ***********************************************************************
 
 
-complex<double> omega_functions_ss_va_nxrwg (double theta_p, double theta_q, double Psi, double GAMMA, complex<double> coef[], const double ko, complex<double> K[], int flag)
+complex<double> omega_functions_ss_va_nxrwg (double theta_p, double theta_q, double Psi, double GAMMA, complex<double> coef[], const complex<double> ko, complex<double> K[], int flag)
 
 
 {                                 

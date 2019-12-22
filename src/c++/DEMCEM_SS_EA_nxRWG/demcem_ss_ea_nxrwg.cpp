@@ -21,7 +21,7 @@ using namespace std;
 //			IMPLEMENTATION OF void DIRECT
 // ***********************************************************************
 
-void demcem_ss_ea_nxrwg (const double r1[],const double r2[],const double r3[],const double r4[], const double ko, const int N_theta, const int N_psi, complex<double> I_DE[] )
+void demcem_ss_ea_nxrwg (const double r1[],const double r2[],const double r3[],const double r4[], const complex<double> ko, const int N_theta, const int N_psi, complex<double> I_DE[] )
 {
 	// ************************************************
 	//			DECLARATION OF KEY VARIABLES
@@ -280,6 +280,12 @@ void demcem_ss_ea_nxrwg (const double r1[],const double r2[],const double r3[],c
 		 I_g3_f2[m-1] = J_theta * I_theta_g3_f2;
 		 I_g3_f3[m-1] = J_theta * I_theta_g3_f3;
 	 } //end for ( int m = 1; m <  7; m++ )
+
+	 delete[] w_theta;
+	 delete[] w_psi;
+	 delete[] z_theta;
+	 delete[] z_psi;
+
 	 //
 	 Ig1_f1 = I_g1_f1[0] + I_g1_f1[1] + I_g1_f1[2] + I_g1_f1[3] + I_g1_f1[4] + I_g1_f1[5];
 	 Ig1_f2 = I_g1_f2[0] + I_g1_f2[1] + I_g1_f2[2] + I_g1_f2[3] + I_g1_f2[4] + I_g1_f2[5];

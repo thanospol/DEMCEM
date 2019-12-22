@@ -17,7 +17,7 @@
 //			IMPLEMENTATION OF complex<double> PHI_1_1
 // ***********************************************************************
 
-complex<double> phi_ws_st_rwg ( complex<double> A, complex<double> B, complex<double> C, int argument, double psi, double Apsi, const double ko , int flag)
+complex<double> phi_ws_st_rwg ( complex<double> A, complex<double> B, complex<double> C, int argument, double psi, double Apsi, const complex<double> ko , int flag)
 {
     complex<double> PHI_out;
     complex<double> j   = Iunit;

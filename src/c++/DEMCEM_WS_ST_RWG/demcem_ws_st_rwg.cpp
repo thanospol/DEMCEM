@@ -20,7 +20,7 @@ using namespace std;
 //			IMPLEMENTATION OF void DIRECT_ST_RWG
 // ***********************************************************************
 
-void demcem_ws_st_rwg (const double r1[],const double r2[],const double r3[], const double ko, const int Np_1D, complex<double> I_DE[] )
+void demcem_ws_st_rwg (const double r1[],const double r2[],const double r3[], const complex<double> ko, const int Np_1D, complex<double> I_DE[] )
 {
 	// ************************************************
 	//			DECLARATION OF KEY VARIABLES
@@ -164,6 +164,9 @@ void demcem_ws_st_rwg (const double r1[],const double r2[],const double r3[], co
 
 		 }// for ( int row = 0 ; row <  3 ; row++ )
 	 }// for ( int column = 0 ; column <  3 ; column++ )
+	 
+	delete[] w;
+	delete[] z;
 
 	// Post-processing
 

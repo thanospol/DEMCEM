@@ -20,13 +20,12 @@ using namespace std;
 //			IMPLEMENTATION OF void coefficients_f1_f1
 // ***********************************************************************
 
-void coefficients_ws_ea_rwg (const double r1[],const double r2[],const double r3[],const double r4[],const double ko, complex<double> coef[], complex<double> coefm[], int flag )
+void coefficients_ws_ea_rwg (const double r1[],const double r2[],const double r3[],const double r4[],const complex<double> ko, complex<double> coef[], complex<double> coefm[], int flag )
 {
-    double aa[3], bb[3], cc[3], dd[3];
+    double bb[3], cc[3], dd[3];
     
     for (int i = 0; i < 3; i++)
     {
-        aa[i] = r1[i] - r1[i];
         bb[i] = r2[i] - r1[i];
         cc[i] = r3[i] - r1[i];
         dd[i] = r4[i] - r1[i];

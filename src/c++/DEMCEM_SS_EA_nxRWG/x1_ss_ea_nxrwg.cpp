@@ -20,7 +20,7 @@ using namespace std;
 //			IMPLEMENTATION OF void void X1
 // ***********************************************************************
 
-void x1_ss_ea_nxrwg ( double psi, complex<double> D1, complex<double> D2, double tpsiB, const double ko, complex<double> B, complex<double> N[] )
+void x1_ss_ea_nxrwg ( double psi, complex<double> D1, complex<double> D2, double tpsiB, const complex<double> ko, complex<double> B, complex<double> N[] )
 {
 	complex<double> D3, aD3, expaD3, aD1, expaD1, D2a, H, T11, T21, T31, T41, T12, T22, T32, T42;
 	complex<double>	N21, N31, N81, N91, N101, N111, N121, N41, N51, N22, N32, N82, N92, N102, N112, N122, N42, N52;

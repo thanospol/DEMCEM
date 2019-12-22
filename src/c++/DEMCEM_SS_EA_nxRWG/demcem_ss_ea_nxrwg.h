@@ -25,15 +25,15 @@ using namespace std;
 
 // Common functions for all cases
 
-void x2_ss_ea_nxrwg  ( complex<double> D, const double ko, complex<double> a, complex<double> N[] );
-void x1_ss_ea_nxrwg  ( double psi, complex<double> D1, complex<double> D2, double tpsiB, const double ko, complex<double> B, complex<double> N[] );
+void x2_ss_ea_nxrwg  ( complex<double> D, const complex<double> ko, complex<double> a, complex<double> N[] );
+void x1_ss_ea_nxrwg  ( double psi, complex<double> D1, complex<double> D2, double tpsiB, const complex<double> ko, complex<double> B, complex<double> N[] );
 void gl_quad ( int n, double x[], double w[] );
 void theta_limits_ss_ea_nxrwg ( int argument, double *theta_A, double *theta_B );
 void psi_limits_ss_ea_nxrwg ( int argument, double PsiA, double PsiB, double *psi_A, double *psi_B );
-void x_function_pre_ss_ea_nxrwg (double theta, double Psi, double tPsiA, double tPsiB, double PsiA, double PsiB, double B, double Bm, complex<double> N[], complex<double> Nm[], const double ko);
+void x_function_pre_ss_ea_nxrwg (double theta, double Psi, double tPsiA, double tPsiB, double PsiA, double PsiB, double B, double Bm, complex<double> N[], complex<double> Nm[], const complex<double> ko);
 
 // Case-dependent functions
-void coefficients_ss_ea_nxrwg (const double r1[],const double r2[],const double r3[],const double r4[],const double ko, double Ap, complex<double> coef[], complex<double> coefm[], int flag );
+void coefficients_ss_ea_nxrwg (const double r1[],const double r2[],const double r3[],const double r4[],const complex<double> ko, double Ap, complex<double> coef[], complex<double> coefm[], int flag );
 
 complex<double> x_functions_ss_ea_nxrwg (double theta, double Psi, double B, double Bm, complex<double> coef[], complex<double> coefm[], complex<double> N[], complex<double> Nm[], int flag);
 

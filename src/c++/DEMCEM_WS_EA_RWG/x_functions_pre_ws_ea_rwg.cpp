@@ -20,7 +20,7 @@
 //			IMPLEMENTATION OF void x_function_pre
 // ***********************************************************************
 
-void x_functions_pre_ws_ea_rwg (double theta, double Psi, double tPsiA, double tPsiB, double PsiA, double PsiB, double B, double Bm, complex<double> N[], complex<double> Nm[], const double ko)
+void x_functions_pre_ws_ea_rwg (double theta, double Psi, double tPsiA, double tPsiB, double PsiA, double PsiB, double B, double Bm, complex<double> N[], complex<double> Nm[], const complex<double> ko)
 {
 	double  D, D1, D2;
 	//
