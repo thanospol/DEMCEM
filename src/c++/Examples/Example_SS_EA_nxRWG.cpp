@@ -13,7 +13,7 @@
 #include "demcem_ss_ea_rwg.h"
 #include "demcem_constants.h"
 
-void demcem_ss_ea_nxrwg (const double r1[],const double r2[],const double r3[],const double r4[], const double ko, const int N_theta, const int N_psi, complex<double> I_DE[] );
+void demcem_ss_ea_nxrwg (const double r1[],const double r2[],const double r3[],const double r4[], const complex<double> ko, const int N_theta, const int N_psi, complex<double> I_DE[] );
 
 
 void Example_SS_EA_nxRWG (const int Counter_start,  const int Counter_end)
