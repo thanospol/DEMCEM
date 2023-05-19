@@ -14,7 +14,7 @@
 #include "demcem_inline.h"
 #include "demcem_constants.h"
 
-void demcem_ws_va_rwg (const double r1[],const double r2[],const double r3[],const double r4[], const double r5[], const double ko, const int N_theta_p, const int N_theta_q, const int N_psi, complex<double> I_DE[] );
+void demcem_ws_va_rwg (const double r1[],const double r2[],const double r3[],const double r4[], const double r5[], const complex<double> ko, const int N_theta_p, const int N_theta_q, const int N_psi, complex<double> I_DE[] );
 
 void Example_WS_VA_RWG (const int Counter_start,  const int Counter_end )
 {
